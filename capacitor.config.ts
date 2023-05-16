@@ -1,5 +1,11 @@
 import { CapacitorConfig, LiveUpdateConfig } from '@capacitor/cli';
 
+const liveUpdateConfig: LiveUpdateConfig = {
+  appId: 'b78e26a6',
+  channel: 'Production',
+  autoUpdateMethod: 'none',
+}
+
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
   appName: 'jon-capacitor-live-updates',
@@ -8,11 +14,7 @@ const config: CapacitorConfig = {
     androidScheme: 'https'
   },
   plugins: {
-    LiveUpdates: {
-      appId: 'b78e26a6',
-      channel: 'Production',
-      autoUpdateMethod: 'background',
-    }
+    LiveUpdates: liveUpdateConfig
   }
 };
 
