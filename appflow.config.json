@@ -1,0 +1,10 @@
+{
+  "apps":
+  [
+      {
+          "appId": "b78e26a6",
+          "root": ".",
+          "dependencyInstallCommand": "npm install --force"
+      }
+  ]
+}
