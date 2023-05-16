@@ -3,7 +3,7 @@ import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
-  const VERSION = 2
+  const VERSION = 1
 
   return (
     <IonPage>
@@ -15,10 +15,10 @@ const Tab1: React.FC = () => {
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">{`This is version ${VERSION}`}</IonTitle>
+            <IonTitle size="large">Tab 1</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+        <ExploreContainer name={`This is version ${VERSION}`} />
       </IonContent>
     </IonPage>
   );
