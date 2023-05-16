@@ -12,17 +12,16 @@ import {
 } from '@ionic/react';
 import { useState } from 'react';
 import { sync, reload, SyncResult } from '@capacitor/live-updates';
-import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
-  const VERSION = 2
+  const VERSION: number = 3
 
-  const [syncResp, setSyncResp] = useState('')
+  const [syncResp, setSyncResp] = useState<string>('')
 
   const liveUpdateSync = async () => {
-    const resp = await sync()
-    const formatted = JSON.stringify(resp, null, 2)
+    const resp: SyncResult = await sync()
+    const formatted: string = JSON.stringify(resp, null, 2)
     setSyncResp(formatted)
   } 
 
