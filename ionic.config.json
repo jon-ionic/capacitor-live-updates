@@ -1,0 +1,7 @@
+{
+  "name": "jon-capacitor-live-updates",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
